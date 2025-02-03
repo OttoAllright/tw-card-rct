@@ -1,2 +1,2 @@
-export const FRONTEND_URL = process.env.FRONTEND_URL || "local:host5173"
-export const PORT = process.env.PORT || "3000"
+export const FRONTEND_URL = process.env.FRONTEND_URL 
+export const PORT = process.env.PORT 
