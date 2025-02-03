@@ -1,6 +1,6 @@
 import './app.css'
 import { useState } from 'react'
-export function Card ({children ='unkown',userName='@unknown'}) {
+export function Card ({profileimg = 'https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541',children ='unkown',userName='@unknown'}) {
 
     const [isfollowing, setIsFollowing] = useState(false)
 
@@ -15,7 +15,7 @@ return (
 
     <article className='tw-followCard'>
     <header className='tw-followCard-header'>
-        <img src="https://yt3.ggpht.com/8zDh_qQPQRQx1a8mZRBcdGsRkd6qIq3fU_OsK5j61AJuBtMS4wJ_QwBlgciIWzfCT7k_I4Ei4w=s88-c-k-c0x00ffffff-no-rj" className='tw-followCard-avatar'/>
+        <img src={profileimg} className='tw-followCard-avatar'/>
         <div className='tw-followCard-info'>
             <strong>{children}</strong>
             <span className='tw-followCard-infoUserName'>{userName}</span>
