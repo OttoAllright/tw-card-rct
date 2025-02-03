@@ -1,0 +1,68 @@
+article {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+}
+    
+    article header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+    }
+    
+    article header div {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    article header span {
+    opacity: .6;
+    }
+    
+    article img {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+    }
+
+    .tw-followCard-button {
+        margin-left: 16px;
+        border: 0;
+        border-radius: 999px;
+        padding: 6px 16px;
+        font-weight: bold;
+        transition: .3s ease background-color;
+    }
+    
+    .is-following {
+        border: 1px solid #bbb;
+        background: transparent;
+        justify-content: centerss;
+        width: 140px;
+    }
+    
+        .tw-followCard-button:hover {
+        background-color: #09f;
+        opacity: .8;
+    }
+        
+    .tw-followCard-stopfollow{
+        display: none;
+    }
+        .is-following:hover {
+        background: transparent;
+        color:red;
+        border: 1px solid red;
+
+    }
+
+    .is-following:hover .tw-followCard-stopfollow{
+        display: block;
+    }
+    .is-following:hover .tw-folloCard-text{
+        display: none;
+    }
+
+   
