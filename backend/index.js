@@ -11,7 +11,7 @@ app.use(
   })
 );
 
-app.get('/f', (req, res) => {
+app.get('/', (req, res) => {
   console.log('seguido');
   res.send('solicitud recibida');
 });
